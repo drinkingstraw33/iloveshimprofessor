@@ -25,6 +25,18 @@
         <p><input type="checkbox" name="answer" value="l">이분분열</p>
         <p><input type="submit" value="제출하기"</p>
     </form>
-    <script type="text/javascript" src="experiment.js"> </script>
+    <script type="text/javascript" src="experiment.js">
+        function noEvent() {
+            if (event.keyCode == 116) {
+                alert("새로고침을 할 수 없습니다.");
+                event.keyCode = 2;
+                return false;
+            } else if (event.ctrlKey &&
+                (event.keyCode == 78 || event.keyCode == 82)) {
+                return false;
+            }
+        }
+        document.onkeydown = noEvent;
+    </script>
 </body>
 </html>
