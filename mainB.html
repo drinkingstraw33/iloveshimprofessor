@@ -9,21 +9,8 @@
 <body>
     <h1>인지과정 및 실험 조별과제 B</h1>
     <h2>본 실험에는 양쪽 소리가 다 들리는 이어폰이 필요합니다.</h2>
-    <h2>뒤로가기나 새로고침을 누르시면 실험을 처음부터 다시 시작하셔야 합니다. 누르지 말아주세요.</h2>
+    <h2>뒤로가기나 새로고침은 누르지 말아주세요.</h2>
     <p>실험에 참가해 주셔서 감사합니다. 아래의 링크를 누르면 실험이 시작됩니다.</p>
     <a href="youtubeB.html">넘어가기</a>
-    <script type="text/javascript" src="experiment.js">
-        function noEvent() {
-            if (event.keyCode == 116) {
-                alert("새로고침을 할 수 없습니다.");
-                event.keyCode = 2;
-                return false;
-            } else if (event.ctrlKey &&
-                (event.keyCode == 78 || event.keyCode == 82)) {
-                return false;
-            }
-        }
-        document.onkeydown = noEvent;
-    </script>
 </body>
 </html>

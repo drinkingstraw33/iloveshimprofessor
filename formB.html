@@ -8,9 +8,10 @@
 </head>
 
 <body>
-    <h2>아래의 12개 단어 중, 영상에서 들은 단어를 선택하세요. 다 선택하시면 아래의 제출하기 버튼을 눌러주세요.</h2>
-    <h3>제출하기 버튼을 누르면 본 페이지로 돌아갈 수 없습니다!</h3>
+    <h2>아래의 12개 단어 중, 영상에서 들은 단어를 선택하세요. 다 선택하시면, 맞게 선택했는지를 확인하시고 아래의 제출하기 버튼을 눌러주세요.</h2>
+    <h2>뒤로가기나 새로고침은 누르지 말아주세요.</h2>
     <form action="https://script.google.com/macros/s/AKfycbyncJpG4QlgtTWdTbDetRIaAhSUx-nyIL-0batI/exec" method="POST">
+        <p><label for="fname">피실험자 ID:</label><input type="text" id="fname" name="fname"></p>
         <p><input type="checkbox" name="answer" value="a">파기환송심</p>
         <p><input type="checkbox" name="answer" value="b">사회명목론</p>
         <p><input type="checkbox" name="answer" value="c">범주변수</p>
@@ -23,20 +24,7 @@
         <p><input type="checkbox" name="answer" value="j">수송단백질</p>
         <p><input type="checkbox" name="answer" value="k">진핵생물</p>
         <p><input type="checkbox" name="answer" value="l">이분분열</p>
-        <p><input type="submit" value="제출하기"</p>
+        <p><input type="submit" value="제출하기" onclick="alert('실험에 참여해 주셔서 감사합니다. 확인 버튼을 누르신 후에 페이지에서 나가시면 됩니다.')"></p>
     </form>
-    <script type="text/javascript" src="experiment.js">
-        function noEvent() {
-            if (event.keyCode == 116) {
-                alert("새로고침을 할 수 없습니다.");
-                event.keyCode = 2;
-                return false;
-            } else if (event.ctrlKey &&
-                (event.keyCode == 78 || event.keyCode == 82)) {
-                return false;
-            }
-        }
-        document.onkeydown = noEvent;
-    </script>
 </body>
 </html>
