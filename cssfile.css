@@ -1,0 +1,5 @@
+#paragraph {
+    max-width: 600px;
+    line-height: 1.5em;
+    border: 1px black solid;
+}

@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인지과정 및 실험 A</title>
+    <link rel="stylesheet" href="cssfile.css">
 </head>
 
 <body>
     <h2>아래의 12개 단어 중, 오디오파일에서 들은 단어를 선택하세요. 다 선택하시면, 맞게 선택했는지를 확인하시고 아래의 제출하기 버튼을 눌러주세요.</h2>
+    <h3>피실험자 ID에는 카카오톡으로 받으셨던 ID 번호를 입력해주세요.</h3>
     <h3>뒤로가기나 새로고침은 누르지 말아주세요.</h3>
     <form action="https://script.google.com/macros/s/AKfycbyncJpG4QlgtTWdTbDetRIaAhSUx-nyIL-0batI/exec" method="POST">
         <p><label for="fname">피실험자 ID:</label><input type="text" id="fname" name="fname"></p>
@@ -21,10 +23,12 @@
         <p><input type="checkbox" name="answer" value="g">도파민</p>
         <p><input type="checkbox" name="answer" value="h">이온채널</p>
         <p><input type="checkbox" name="answer" value="i">카디오리핀</p>
-        <p><input type="checkbox" name="answer" value="j">푸린</p>
+        <p><input type="checkbox" name="answer" value="j">포린</p>
         <p><input type="checkbox" name="answer" value="k">뇌하수체</p>
         <p><input type="checkbox" name="answer" value="l">수송단백질</p>
-        <p><input type="submit" value="제출하기" onclick="alert('실험에 참여해 주셔서 감사합니다. 확인 버튼을 누르신 후에 다음 창으로 넘어가면, 페이지에서 나가시면 됩니다.')"></p>
+        <p><input type="submit" value="제출하기"
+                onclick="alert('실험에 참여해 주셔서 감사합니다. 확인 버튼을 누르신 후에 다음 창으로 넘어가면, 페이지에서 나가시면 됩니다. 시간이 조금 걸리므로, 페이지가 넘어가기 전까진 나가지 말아주세요!!')">
+        </p>
     </form>
 </body>
 </html>
